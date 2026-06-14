@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img/jpg" href="multa.jpg">
+    <link rel="stylesheet" href= "multa.css">
+    <title>Multas</title>
+</head>
+<body>
+    <img src ="multa.jpg" alt="MULTA" class="normal">
+    <h1>
+        Programa Multa com e sem descontos
+    </h1>
+    <form>
+        <p> Entre o dia em que ocorreu a infração: 
+        <input type="date" id="inDate" autofocus required>
+        </p>
+        <p> Entre o valor da multa: <!--preste atenção no step abaixo para aceitar FLOAT-->
+            <input type="number" id="inMulta" step="0.01" min="0" required>
+            <input type="submit" value = "Calcular a Multa">
+        </p>
+        <p>
+            <input type="reset" value = "RESET">
+        </p>
+    </form>
+    <h3></h3>
+    <h2 id="resp2"></h2>
+    <script src="multa.js"></script>
+</body>
+</html>

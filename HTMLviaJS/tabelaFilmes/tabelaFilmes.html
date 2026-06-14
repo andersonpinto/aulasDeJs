@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href ="tabelaFilmes.jpeg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="tabelaFilmes.css">
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="tabelaFilmes.jpeg" alt="filmes" class="img-fluid">
+            </div>
+            <div class="col-sm-8">
+                <h1>Meus filmes favoritos</h1>
+                <form>
+                    <p><label for="inTitulo">Título do filme:</label>
+                        <input type="text" class="form-control" id="inTitulo" required autofocus>
+                    </p>
+                    <p>
+                        <label for = "inGenero">Gênero</label>
+                        <input type="text" class="form-control" id = "inGenero" required>
+                    </p>
+                        <input type="submit" class="btn btn-primary float-right mb-3" value="Adicionar">
+                </form>
+                <table class = "table table-striped">
+                    <tr>
+                        <th>Título do Filme</th>
+                        <th>Gênero</th>
+                        <th>Ações</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="tabelaFilmes.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img/jpg" href="brinq.jpg">
+    <link rel="stylesheet" href="brinq.css">
+    <title>Brinquedoteca</title>
+</head>
+<body>
+    <img src ="brinq.jpg" alt="Brinquedoteca" class="normal">
+    <h1>Programa Brinquedoteca:</h1>
+    <form>
+        <p>Nome da criança: <input type="text" id="inNome" required autofocus></p>
+        <p>Idade: 
+            <input type="number" id="inIdade" min="0" required>
+            <input type="submit" value="Adicionar">
+        </p>
+        <input type="button" value="Listar Todos" id="btListar">
+        <input type="button" value="Resumir por idade" id="btResumir">
+    <pre></pre>
+    <script src="brinq.js"></script>
+</body>
+</html>

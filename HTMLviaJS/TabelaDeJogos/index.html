@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tabela Dinâmica de Jogos</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="img/gameTable.jpg" alt=" uma tabela de jogos">
+        </div>
+            <div class="right">  
+                <h1>TABELA DE JOGOS DINÂMICA</h1>
+                <hr>
+                <h2>
+                    <label for="btAdd">
+                    Insira abaixo o nome dos clubes para montarmos a tabela de jogos
+                    </label>
+                </h2>
+                <input type="text" class="inClube" id="inClube" placeholder="insira o nome do clube aqui">
+                <button id="btAdd" class="btAdd">Adicionar um clube</button>
+                <button id="btReset" class="btReset">Novos Clubes</button>
+                <button class="btTabela" id="btTabela">Montar tabela de jogos</button>
+            </div>    
+        <div id="divLista">
+            <hr>
+            <div id="lista" class="lista"></div>
+        </div>
+        <div class="divTab">
+            <hr>
+            <table class="tabJogos" id="tabJogos">
+            </table>
+        </div>
+    </div>
+</body>
+<script src="js/script2.js"></script>
+</html>

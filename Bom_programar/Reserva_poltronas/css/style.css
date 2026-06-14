@@ -1,0 +1,24 @@
+#teatro {
+    width: 150px;
+    height: 200px;
+}
+#pt1, #pt2, #pt3 {
+    width: 25px;
+    height: 25px;
+}
+h1 {border-bottom-style: inset;}
+h5 {font-style: italic;}
+pre {font-style: italic; font-size: 1.1em;}
+#img1 {width: 200px; height:200px;}
+
+figure { 
+    display:inline-block;
+    font-size: 0.7em;
+    margin: 5px;
+}
+img.poltrona {
+    width: 24px;
+    height:16px;
+    margin-right: 6px;
+}
+.entre-letras {letter-spacing:0.5em}

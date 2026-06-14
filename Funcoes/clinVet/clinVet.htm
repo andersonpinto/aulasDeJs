@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img/jpg" href="clinVet.jpg">
+    <link rel="stylesheet" href="clinVet.css">
+    <title>VETERINÁRIA AVENIDA</title>
+</head>
+
+<body>
+    <img src="clinVet.jpg" alt="Clube de Natação" class="normal">
+    <h2>
+        VETERINÁRIA AVENIDA
+    </h2>
+    <form>
+        <fieldset>
+            <legend>Formulário de Compra de vacina</legend>
+        <p> VALOR DA VACINA:
+            <input type="number" id="inValor" autofocus required>
+        </p>
+        <p> POSSUI CONVÊNIO:
+            <input type="radio" name="quest" id="rbSim" value="sim">SIM
+            <input type="radio" name="quest" id="rbNao" value="não" checked>NÃO
+        </p>
+        <label id="lblConv" class="oculta" for="sel-Conv">Selecione o Convênio: </label>
+        <select id="sel-Conv" class="oculta">
+            <option value="">--Selecione um convênio--</option>
+            <option value="amigo">Amigo dos Animais</option>
+            <option value="saude">Saúde Animal</option>
+        </select>
+        <p>
+            <input type="submit" id="btnCalcular" value="Calcular desconto">
+            <input type="button" id="btnReset" value="Reset">
+        </p>
+        </fieldset>
+    </form>
+    <h1 id="outDesc"></h1>
+    <h1 id="outPagar"></h1>
+    <script src="clinVet.js"></script>
+</body>
+
+</html>

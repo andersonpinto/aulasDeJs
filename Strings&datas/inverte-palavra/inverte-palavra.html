@@ -1,0 +1,16 @@
+<script>
+    const palavra = prompt("Palavra: ")
+    const tam = palavra.length
+
+    // inverso inicia com a última letra da palavra em caixa alta
+    let inverso = palavra.charAt(tam-1).toUpperCase()
+
+    //for decrescente percorre as demais letras
+    for (let i = tam -2; i>=0; i--) {
+        inverso += palavra.charAt(i).toLowerCase()
+    }
+
+    // exibe a palavra original e invertida 
+    alert(`Palavra: ${palavra}\nInvertida:${inverso}`)
+
+</script>

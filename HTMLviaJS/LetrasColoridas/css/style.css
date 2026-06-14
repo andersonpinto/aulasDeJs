@@ -1,0 +1,49 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 5px;
+}
+
+.left {
+    grid-column: 1; 
+    align-self: center;
+    position: fixed;
+    top:150px;
+}
+
+.right {
+    grid-column: 2/3;
+}
+
+h1 {
+    font-family: cursive;
+    font-size: 18pt;
+}
+
+hr {
+    height: 5px;
+    color: black;
+}
+
+h2 {
+    font-family: monospace;
+    font-size:14pt;
+}
+
+@keyframes trocarCor {
+    0% {color: blue;}
+    33% {color: green;}
+    66% {color: orange;}
+    100% {color: crimson;}
+}
+
+#resposta {
+    animation: trocarCor 5s infinite;
+    text-align: center;
+}

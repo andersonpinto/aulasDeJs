@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img/jpg" href="revendAuto.jpeg">
+    <link rel="stylesheet" href= "revendAuto.css">
+    <title>Revenda de Automóveis</title>
+</head>
+<body>
+    <img src ="revendAuto.jpeg" alt="CRIPTOGRAFIA" class="normal">
+    <h1>
+        REVENDA DE AUTOMÓVEIS SILVA
+    </h1>
+    <form>
+        <p> Modelo de veículo: 
+            <input type="text" id="inModelo" autofocus required>
+        </p>
+        <p> Ano de Fabricação:
+            <input type="text" id="inAno" required>
+        </p>
+        <p> Preço:
+            <input type="number" id="inPreco" step="0.01" min="0" required>
+        </p>
+        <p>
+            <input type="submit" value = "Classificar - Calcular entrada e parcelas" >
+            <input type="reset" value = "Resetar">
+        </p>
+    </form>
+    <h3 id="outResp1"></h3>
+    <h3 id="outResp2"></h3>
+    <h3 id="outResp3"></h3>
+    
+    <script src="revendAuto.js"></script>
+</body>
+</html>

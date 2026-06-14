@@ -1,0 +1,16 @@
+.tarefa { 
+    color: #222;
+    padding: 4px;
+    cursor: default;
+    display: flex;
+    align-items: center;
+    gap:8px;
+    }
+.tarefa h5 { margin: 0; flex: 1; }
+.tarefa .btnSel { padding: 4px 8px; }
+.tarefa.selecionada h5 { 
+    color: white;
+    background: #2b8;
+    padding: 4px;
+    border-radius: 4px;
+    }

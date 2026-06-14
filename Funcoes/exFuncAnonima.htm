@@ -1,0 +1,20 @@
+<script>
+    const mostraHora = () => {
+        const data = new Date()
+        const hora = data.getHours()
+        const min = data.getMinutes()
+        const seg = data.getSeconds()
+        console.log(`Atenção para o horário de 05: ${hora}: ${min}: ${seg}`)
+    }
+
+    setInterval(mostraHora, 5000) // mostra hora a cada 5 segundos
+
+    // usando uma função anônima para fazer a mesma coisa
+    setInterval( () => {
+        const data = new Date()
+        const hora = data.getHours()
+        const min = data.getMinutes()
+        const seg = data.getSeconds()
+        console.log(`Atenção para o horário par: ${hora}: ${min}: ${seg}`)}, 2000)
+
+</script>

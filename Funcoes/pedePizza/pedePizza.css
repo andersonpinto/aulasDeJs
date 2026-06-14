@@ -1,0 +1,9 @@
+h1 {border-bottom-style: inset;}
+pre {font-size: 1,2 em;}
+img.normal {float:left; height:300px; width:300px;}
+img.alta { float:left; height:420px; width:300px;}
+span {margin-left: 70 px}
+select {width: 150 px}
+.detalhes {width: 300 px}
+.oculta { display: none;}
+.exibe { display: inline;}

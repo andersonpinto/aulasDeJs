@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <input type="button" value="Selecionar" id="btSelect"> 
+</body>
+<script>
+  const btSelect = document.getElementById("btSelect")
+  let frutas = ["banana","laranja","maçã","uva"]
+  colorIndex = 0
+
+   frutas.forEach((fruta,index) => {
+    const frase = `${index} - ${fruta}`
+    const h5 = document.createElement("h5")
+    h5.textContent = frase;
+    document.body.appendChild(h5)
+  });
+  
+  btSelect.addEventListener("click",selecionar)
+
+  function selecionar() {
+      const h5elms = document.querySelectorAll("h5")
+      for (j=0; j < h5elms.length; j++) {
+        h5elms[j].style.color = ""
+        h5elms.forEach(h5elm => h5elm.style.color = "") 
+      }
+      if (colorIndex < h5elms.length) {
+        h5elms[colorIndex].style.color = "red"
+        colorIndex++
+      } else {
+        colorIndex = 0;
+      }
+  }
+
+  let texto = "Consegui pelo menos criar um meu"
+  const h4 = document.createElement('h4')
+  h4.textContent = texto.toUpperCase()
+  document.body.appendChild(h4)
+</script>
+</html>

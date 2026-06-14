@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="melancia.jpg">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <link rel="stylesheet" href="melancia.css">
+        <title>Loja de Esportes</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="melancia.jpg" alt="Melancia" class="img-fluid">
+                </div>
+                <div class="col-sm-8">
+                    <h1>Qual o peso da melancia ?</h1>
+                    <form>
+                        <p><label for="inNome">Nome do Apostador: </label>
+                        <input type="text" id="inNome" class="control" required autofocus></p>
+                       <p><label for="inPeso">Peso (em gramas): </label>
+                        <input type="text" id="inPeso" class="form-control" required autofocus></p>
+                        <p><input type="submit" value="Apostar" class="btn btn-primary">
+                            <input type="button" value="Vencedor" id="btVencedor" class="btn btn-warning">
+                            <input type="button" value="Limpar Apostas" id="btLimpar" class = "btn btn-danger"></p>
+                    </form>
+                    <pre></pre>
+                </div>
+            </div>
+        </div>
+        <script src="melancia.js"></script>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="herbServ.jpg">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <link rel="stylesheet" href="herbServ.css">
+        <title>Mecânica Herbie</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row" id="divImagem">
+                <div class="col-sm-3">
+                   <img src="herbServ.jpg" alt="serviços em ação">
+                </div>
+                <div class="col-sm-7">
+                    <div class="row" id="divTitulo">
+                        <div class="">
+                            <h1>Mecânica Herbie</h1>
+                            <h4>Controle de Serviços</h4>
+                            <hr><h5 id="numServ"></h5><hr>
+                        </div>
+                    </div>
+                    <div class="row" id="divInputs">
+                        <form>
+                            <label for="inServ">Serviço - Veículo: </label><br>
+                            <input type="text" id="inServ" class= "form-control mb-3" placeholder="Insira o Serviço e o veículo aqui" required autofocus>
+                            <input type="button" class="btn btn-primary" id="btAdicionar" value="Adicionar Serviço">
+                            <input type="button" class="btn btn-success" id="btExecutar" value="Executar Serviço">
+                            <input type="button" class="btn btn-danger" id="btLimpar" value="Limpar Servicos"> 
+                        </form>
+                    </div>
+                </div>   
+        </div>
+        <div class="row"><hr><hr><br>
+            <h3 id="resposta1" class="text-color-primary"></h3>
+            <h3 id="resposta2" class="text-color-primary"></h3>
+        </div>
+        <script src="herbServ.js"></script>
+    </body>
+</html>

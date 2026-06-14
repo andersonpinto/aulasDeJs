@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img/jpg" href="pedePizza.png">
+    <link rel="stylesheet" href= "pedePizza.css">
+    <title>Pede Pizza</title>
+</head>
+<body>
+    <img src ="pedePizza.png" alt="CRIPTOGRAFIA" class="normal">
+    <h1>
+        PEDE PIZZA !!!  PIZZARIA
+    </h1>
+    <form>
+        <p> ÍTEM DO PEDIDO: 
+            <input type="radio" name="produto" id="rbPizza" autofocus checked> Pizza
+            <input type="radio" name="produto" id="rbBebida"> Bebida
+            <span>Item:</span>
+            <select id="inPizza">
+                <option value="media">Pizza Média</option>
+                <option value="grande">Pizza Grande</option>
+                <option value="familia">Pizza Família</option>
+            </select>
+            <select id="inBebida" class="oculta">
+                <option value="refri">Refrigerante litro</option>
+                <option value="suco">Jarra de Suco</option>
+                <option value="agua">Água Mineral</option>
+            </select>
+        </p>
+        <p> Detalhes do Item: (sabores)
+            <input type="text" id="inDetalhes" class = "detalhes">
+            <input type="submit" value="Adicionar">
+        </p>
+    </form>
+    <pre></pre>
+    <script src="pedePizza.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+h1 {border-bottom-style: inset;}
+.tarefa-selecionada {color:red; font-style:italic;}
+img.moeda1-00 {heigth:84px; width: 84px; margin-bottom: 5 px }
+img.moeda0-50 {heigth:116px; width:116px; margin-bottom: 5 px }
+img.moeda0-25 {heigth:76px; width: 76px; margin-bottom: 5 px }
+img.moeda0-10 {heigth:60px; width: 60px; margin-bottom: 5 px }
+.alinha-direita { text-align: rigth;}
